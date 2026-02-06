@@ -3,130 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vincent Ooi - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Vincent Ooi ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #e0f7fa 0%, #e8f5e9 100%);
+            font-family: 'Space Grotesk', sans-serif;
+            background: #6c5ce7;
             min-height: 100vh;
             padding: 40px 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 24px;
-            padding: 48px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-        header { text-align: center; margin-bottom: 40px; }
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #00b894, #00cec9);
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
             color: white;
         }
-        h1 { font-size: 2.2rem; color: #2d3436; }
-        .tagline { color: #00b894; font-weight: 500; margin-top: 8px; }
-        .contact {
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            border-radius: 30px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '✨';
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.1;
+            top: -20px;
+            right: -20px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .links {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 16px;
-            margin-top: 16px;
+            gap: 12px;
+            margin-top: 24px;
         }
-        .contact a {
-            color: #00b894;
+        .links a {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
             text-decoration: none;
-            padding: 8px 16px;
-            background: rgba(0,184,148,0.1);
-            border-radius: 20px;
-            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s;
         }
-        section { margin-bottom: 32px; }
-        h2 {
-            font-size: 1.3rem;
-            color: #00b894;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        h2::before {
-            content: '';
-            width: 4px;
-            height: 24px;
-            background: #00b894;
-            border-radius: 2px;
-        }
+        .links a:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
         .card {
-            background: #f8f9fa;
-            border-radius: 16px;
-            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 24px;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        h2 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.7;
             margin-bottom: 16px;
         }
-        h3 { color: #2d3436; font-size: 1.1rem; }
-        .meta { color: #636e72; font-size: 0.9rem; margin-top: 4px; }
-        .description { margin-top: 12px; color: #444; line-height: 1.7; }
+        h3 { font-size: 1.2rem; margin-bottom: 8px; }
+        .meta { opacity: 0.7; font-size: 0.9rem; }
+        .description { margin-top: 12px; opacity: 0.9; line-height: 1.6; }
+        .skills-section { margin-top: 30px; }
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            justify-content: center;
         }
         .skill {
-            background: linear-gradient(135deg, #00b894, #00cec9);
-            color: white;
-            padding: 8px 18px;
+            background: #fd79a8;
+            padding: 10px 20px;
             border-radius: 25px;
-            font-size: 0.9rem;
             font-weight: 500;
+            transition: transform 0.2s;
+        }
+        .skill:hover { transform: scale(1.05); }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.6;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="avatar">V</div>
-            <h1>Vincent Ooi</h1>
-            <p class="tagline">I am a professional software developer</p>
-            <div class="contact">
-                <a href="mailto:vincent@dasecure.com">vincent@dasecure.com</a>
+            <h1>Vincent Ooi 👋</h1>
+            <p class="subtitle">I am a professional software developer</p>
+            <div class="links">
+                <a href="mailto:vincent@dasecure.com">📧 Email</a>
                 
                 
             </div>
         </header>
         
-        <section>
-    <h2>Experience</h2>
-    <div class="card">
+        <div class="grid">
+            <div class="card">
+    <h2>💼 Experience</h2>
     <h3>Gofer</h3>
     <p class="meta">Self Employed • Feb 2020 - Present</p>
     <p class="description">Bum around and do nothing</p>
 </div>
-</section>
-        
-        <section>
-    <h2>Education</h2>
-    <div class="card">
+            
+            <div class="card">
+    <h2>🎓 Education</h2>
     <h3>PhD in Gofering</h3>
-    <p class="meta">School of hard knocks • Enginerring</p>
+    <p class="meta">School of hard knocks</p>
 </div>
-</section>
+        </div>
         
-        <section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <span class="skill">Engineering</span><span class="skill">Photography</span>
+        <div class="skills-section">
+    <div class="card" style="text-align: center;">
+        <h2>⚡ Skills</h2>
+        <div class="skills">
+            <span class="skill">Gofering</span><span class="skill">Engineering</span><span class="skill">Photography</span><span class="skill">Running</span>
+        </div>
     </div>
-</section>
+</div>
+        
+        <footer>Made with 💜 using ResumeBuilder</footer>
     </div>
 </body>
 </html>
